@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трудоустройство иностранных студентов в России - Полное руководство</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --success-color: #27ae60;
+            --background-color: #f8f9fa;
+            --text-color: #2c3e50;
+            --border-color: #dee2e6;
+            --shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            overflow-x: hidden;
+        }
+        
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #34495e 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
+        }
+        
+        nav .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #fff, #e0e0e0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shine 3s ease-in-out infinite;
+        }
+        
+        @keyframes shine {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--secondary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .mobile-menu span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 60px;
+            background: linear-gradient(135deg, var(--secondary-color) 0%, #2980b9 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%23ffffff" fill-opacity="0.1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+            background-size: cover;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeInUp 1s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: var(--secondary-color);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        
+        /* Main Content */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .section {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section h2::before {
+            content: '';
+            width: 4px;
+            height: 30px;
+            background: linear-gradient(to bottom, var(--secondary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+        
+        .section h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+        }
+        
+        /* Cards */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+            transform: translateX(-100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover::before {
+            transform: translateX(0);
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        /* Checklist */
+        .checklist {
+            list-style: none;
+            margin: 1rem 0;
+        }
+        
+        .checklist li {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .checklist li:hover {
+            background: #f8f9fa;
+            padding-left: 1rem;
+        }
+        
+        .checklist li::before {
+            content: '✓';
+            color: var(--success-color);
+            font-weight: bold;
+            margin-right: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        /* Important Box */
+        .important-box {
+            background: linear-gradient(135deg, #fff5f5 0%, #ffe0e0 100%);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(231, 76, 60, 0.1);
+        }
+        
+        .important-box h4 {
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .important-box h4::before {
+            content: '⚠️';
+            font-size: 1.5rem;
+        }
+        
+        /* Success Box */
+        .success-box {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-left: 4px solid var(--success-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(39, 174, 96, 0.1);
+        }
+        
+        .success-box h4 {
+            color: var(--success-color);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .success-box h4::before {
+            content: '✅';
+            font-size: 1.5rem;
+        }
+        
+        /* Table */
+        .table-responsive {
+            overflow-x: auto;
+            margin: 1rem 0;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        table th {
+            background: linear-gradient(135deg, var(--primary-color), #34495e);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+        
+        table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        table tr:hover {
+            background: #f8f9fa;
+        }
+        
+        /* Accordion */
+        .accordion {
+            margin: 2rem 0;
+        }
+        
+        .accordion-item {
+            background: white;
+            margin-bottom: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .accordion-header {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-header:hover {
+            background: linear-gradient(135deg, #e9ecef, #dee2e6);
+        }
+        
+        .accordion-header h3 {
+            margin: 0;
+            color: var(--primary-color);
+        }
+        
+        .accordion-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .accordion-item.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+        
+        .accordion-content {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .accordion-item.active .accordion-content {
+            padding: 1.5rem;
+            max-height: 1000px;
+        }
+        
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .contact-card {
+            background: linear-gradient(135deg, #f8f9fa, white);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .contact-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .contact-card a {
+            color: var(--secondary-color);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-card a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--primary-color), #34495e);
+            color: white;
+            padding: 3rem 0 1rem;
+            margin-top: 4rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: #ecf0f1;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section a:hover {
+            color: white;
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding: 2rem 0 1rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #bdc3c7;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .mobile-menu {
+                display: block;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .section {
+                padding: 1.5rem;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+        
+        .slide-in-left {
+            animation: slideInLeft 0.8s ease-out;
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .slide-in-right {
+            animation: slideInRight 0.8s ease-out;
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid rgba(255,255,255,.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">📚 Работа для студентов</div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#requirements">Требования</a></li>
+                <li><a href="#documents">Документы</a></li>
+                <li><a href="#process">Процесс</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+            <div class="mobile-menu" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Трудоустройство иностранных студентов в России</h1>
+            <p>Полное руководство по легальному трудоустройству для студентов очной формы обучения</p>
+            <a href="#requirements" class="cta-button">Начать изучение</a>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Requirements Section -->
+        <section class="section" id="requirements">
+            <h2>Основные требования и условия</h2>
+            
+            <div class="success-box">
+                <h4>Кто может работать без разрешения?</h4>
+                <p>Согласно подпункту 7.1 пункта 4 статьи 13 ФЗ №115 «О правовом положении иностранных граждан в РФ», студенты очной формы обучения могут работать без оформления разрешения на работу или патента.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">📍</div>
+                    <h3>Территориальное ограничение</h3>
+                    <p>Работа разрешена только в том субъекте РФ, где находится учебное заведение. Командировки в другие регионы не допускаются.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">⏰</div>
+                    <h3>Время работы</h3>
+                    <p>Работа должна осуществляться в свободное от учебы время. Рекомендуется не более 20 часов в неделю во время учебы и до 40 часов во время каникул.</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Форма обучения</h3>
+                    <p>Право работать без разрешения имеют только студенты очной формы обучения. При переходе на заочную или очно-заочную форму требуется оформить разрешение.</p>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Категория студентов</th>
+                            <th>Требования для трудоустройства</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Студенты очной формы</td>
+                            <td>Могут работать без разрешения на работу или патента</td>
+                        </tr>
+                        <tr>
+                            <td>Студенты заочной/очно-заочной формы</td>
+                            <td>Требуется разрешение на работу или патент</td>
+                        </tr>
+                        <tr>
+                            <td>Граждане стран ЕАЭС</td>
+                            <td>Могут работать без разрешения независимо от формы обучения</td>
+                        </tr>
+                        <tr>
+                            <td>Студенты в академическом отпуске</td>
+                            <td>Требуется разрешение на работу или патент</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="important-box">
+                <h4>Важно помнить!</h4>
+                <p>Некоторые сферы деятельности закрыты для иностранных граждан: государственная служба, безопасность, должности капитана воздушного судна и др.</p>
+            </div>
+        </section>
+
+        <!-- Documents Section -->
+        <section class="section" id="documents">
+            <h2>Необходимые документы</h2>
+            
+            <h3>Обязательные документы для трудоустройства:</h3>
+            <ul class="checklist">
+                <li>Паспорт (оригинал)</li>
+                <li>Нотариально заверенный перевод паспорта на русский язык</li>
+                <li>Миграционная карта с учебной целью въезда</li>
+                <li>Регистрация по месту пребывания (миграционный учет)</li>
+                <li>Справка из учебного заведения о форме обучения (очная)</li>
+                <li>Полис добровольного медицинского страхования (ДМС)</li>
+            </ul>
+
+            <h3>Дополнительные документы:</h3>
+            <ul class="checklist">
+                <li>ИНН (свидетельство о постановке на учет в налоговом органе)</li>
+                <li>СНИЛС (страховое свидетельство обязательного пенсионного страхования)</li>
+                <li>Документы об образовании (дипломы, сертификаты)</li>
+                <li>Резюме на русском языке</li>
+                <li>Рекомендательные письма (при наличии)</li>
+            </ul>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Как получить ИНН?</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ol>
+                            <li>Обратиться в налоговую инспекцию по месту пребывания</li>
+                            <li>Заполнить заявление по форме 2-2-Учет</li>
+                            <li>Предоставить паспорт и его нотариально заверенный перевод</li>
+                            <li>Предоставить миграционную карту и регистрацию</li>
+                            <li>Получить свидетельство о постановке на учет (обычно через 5 рабочих дней)</li>
+                        </ol>
+                        <p style="margin-top: 1rem;"><em>ИНН можно также оформить через МФЦ или на портале Госуслуг.</em></p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Как получить СНИЛС?</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <ol>
+                            <li>Обратиться в территориальное отделение Пенсионного фонда или МФЦ</li>
+                            <li>Заполнить анкету застрахованного лица</li>
+                            <li>Предоставить паспорт и его нотариально заверенный перевод</li>
+                            <li>Предоставить миграционную карту и регистрацию</li>
+                            <li>Получить СНИЛС (обычно в день обращения)</li>
+                        </ol>
+                        <p style="margin-top: 1rem;"><em>СНИЛС также может оформить работодатель при трудоустройстве.</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="section" id="process">
+            <h2>Процесс трудоустройства</h2>
+            
+            <div class="cards-grid">
+                <div class="card slide-in-left">
+                    <div class="card-icon">1</div>
+                    <h3>Поиск работы</h3>
+                    <ul>
+                        <li>Центр карьеры университета</li>
+                        <li>Онлайн-платформы (hh.ru, SuperJob)</li>
+                        <li>Ярмарки вакансий</li>
+                        <li>Социальные сети</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h3>Подготовка документов</h3>
+                    <ul>
+                        <li>Составить резюме на русском языке</li>
+                        <li>Подготовить сопроводительное письмо</li>
+                        <li>Собрать все необходимые документы</li>
+                        <li>Сделать копии документов</li>
+                    </ul>
+                </div>
+
+                <div class="card slide-in-right">
+                    <div class="card-icon">3</div>
+                    <h3>Собеседование</h3>
+                    <ul>
+                        <li>Изучить информацию о компании</li>
+                        <li>Подготовить ответы на типичные вопросы</li>
+                        <li>Обсудить график работы</li>
+                        <li>Уточнить условия труда</li>
+                    </ul>
+                </div>
+
+                <div class="card slide-in-left">
+                    <div class="card-icon">4</div>
+                    <h3>Оформление на работу</h3>
+                    <ul>
+                        <li>Заключить трудовой договор</li>
+                        <li>Получить свой экземпляр договора</li>
+                        <li>Ознакомиться с правилами</li>
+                        <li>Пройти инструктаж</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">5</div>
+                    <h3>После трудоустройства</h3>
+                    <ul>
+                        <li>Открыть банковский счет</li>
+                        <li>Уточнить график выплат</li>
+                        <li>Познакомиться с коллегами</li>
+                        <li>Следить за сроками документов</li>
+                    </ul>
+                </div>
+
+                <div class="card slide-in-right">
+                    <div class="card-icon">⚖️</div>
+                    <h3>Юридические аспекты</h3>
+                    <ul>
+                        <li>Работодатель уведомляет МВД</li>
+                        <li>Соблюдение трудового кодекса РФ</li>
+                        <li>Налоговые обязательства</li>
+                        <li>Страховые отчисления</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="important-box">
+                <h4>Обязанности работодателя</h4>
+                <p>Работодатель обязан уведомить территориальный орган МВД России о заключении трудового договора с иностранным гражданином в течение 3 рабочих дней с даты заключения договора.</p>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section" id="faq">
+            <h2>Часто задаваемые вопросы</h2>
+            
+            <div class="accordion">
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Могу ли я работать в другом городе?</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Нет, иностранный студент может работать только в том субъекте РФ, где он проходит обучение. Например, если вы учитесь в Москве, то работать можно только в Москве, но не в Московской области. Командировки в другие регионы также не допускаются.</p>
+                        <p><strong>Исключение:</strong> граждане стран ЕАЭС (Армения, Беларусь, Казахстан, Киргизия), которые могут работать в любом регионе России.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Какие налоги я буду платить?</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Ставка НДФЛ для иностранных студентов зависит от налогового статуса:</p>
+                        <ul style="margin-top: 1rem;">
+                            <li><strong>13%</strong> – для налоговых резидентов (находящихся в РФ не менее 183 дней в течение 12 месяцев подряд)</li>
+                            <li><strong>13%</strong> – для граждан стран ЕАЭС с первого дня работы</li>
+                            <li><strong>15%</strong> – для нерезидентов (с 01.01.2023)</li>
+                        </ul>
+                        <p style="margin-top: 1rem;">Налоговые резиденты также имеют право на налоговые вычеты: стандартные, социальные и имущественные.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Что делать при академическом отпуске?</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Во время академического отпуска вы теряете право на работу без разрешения на работу или патента. Для продолжения работы необходимо:</p>
+                        <ol style="margin-top: 1rem;">
+                            <li>Уведомить работодателя о смене статуса</li>
+                            <li>Оформить разрешение на работу (для визовых стран) или патент (для безвизовых стран)</li>
+                            <li>После возвращения из академического отпуска и продолжения очного обучения право работать без разрешения восстанавливается автоматически</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Можно ли работать после окончания учебы?</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>После окончания обучения право работать без разрешения на работу или патента прекращается. Трудовой договор должен быть расторгнут. Для продолжения работы необходимо:</p>
+                        <ul style="margin-top: 1rem;">
+                            <li>Оформить разрешение на работу или патент</li>
+                            <li>Получить разрешение на временное проживание (РВП) или вид на жительство (ВНЖ)</li>
+                            <li>Поступить в магистратуру/аспирантуру на очную форму обучения</li>
+                            <li>Для граждан стран ЕАЭС – продолжать работать без дополнительных разрешений</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h3>Влияет ли работа на стипендию?</h3>
+                        <span class="accordion-icon">▼</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Трудоустройство не влияет на получение стипендии. Вы можете одновременно работать и получать стипендию, если соответствуете критериям для ее получения (успеваемость, посещаемость и т.д.).</p>
+                        <p style="margin-top: 1rem;"><strong>Важно:</strong> работа не должна мешать учебному процессу, так как снижение успеваемости может привести к потере стипендии.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checklist Section -->
+        <section class="section">
+            <h2>Контрольный чек-лист для трудоустройства</h2>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <h3>📋 Подготовка документов</h3>
+                    <ul class="checklist">
+                        <li>Паспорт и его нотариально заверенный перевод</li>
+                        <li>Миграционная карта с учебной целью въезда</li>
+                        <li>Действующая регистрация по месту пребывания</li>
+                        <li>Справка из учебного заведения (очная форма)</li>
+                        <li>Полис ДМС</li>
+                        <li>ИНН (при наличии или оформить)</li>
+                        <li>СНИЛС (при наличии или оформить)</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>🔍 Поиск работы</h3>
+                    <ul class="checklist">
+                        <li>Составить резюме на русском языке</li>
+                        <li>Подготовить сопроводительное письмо</li>
+                        <li>Зарегистрироваться на сайтах поиска работы</li>
+                        <li>Обратиться в центр карьеры вуза</li>
+                        <li>Найти вакансии с подходящим графиком</li>
+                        <li>Подготовиться к собеседованию</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>✅ Оформление на работу</h3>
+                    <ul class="checklist">
+                        <li>Предоставить все документы работодателю</li>
+                        <li>Заключить трудовой договор</li>
+                        <li>Получить свой экземпляр договора</li>
+                        <li>Убедиться в уведомлении МВД</li>
+                        <li>Оформить ИНН и СНИЛС (если нет)</li>
+                        <li>Открыть банковский счет</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Important Information -->
+        <section class="section">
+            <h2>Важная информация</h2>
+            
+            <div class="important-box">
+                <h4>Особые случаи</h4>
+                <ul style="margin-top: 1rem;">
+                    <li><strong>Смена учебного заведения:</strong> необходимо уведомить работодателя и предоставить новую справку</li>
+                    <li><strong>Перевод на другую форму обучения:</strong> при переходе на заочную форму требуется оформить разрешение на работу</li>
+                    <li><strong>Окончание обучения:</strong> заранее (за 3-6 месяцев) начать подготовку к изменению статуса</li>
+                </ul>
+            </div>
+
+            <div class="success-box">
+                <h4>Советы по трудоустройству</h4>
+                <ul style="margin-top: 1rem;">
+                    <li>Начинайте поиск работы заранее, учитывая время на оформление документов</li>
+                    <li>Выбирайте работодателей, имеющих опыт работы с иностранными студентами</li>
+                    <li>Обязательно оформляйте трудовые отношения официально</li>
+                    <li>Следите за сроками действия своих документов</li>
+                    <li>Регулярно продлевайте регистрацию и полис ДМС</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contacts Section -->
+        <section class="section" id="contacts">
+            <h2>Полезные контакты</h2>
+            
+            <h3>Государственные органы</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>МВД России</h4>
+                    <p><strong>Главное управление по вопросам миграции</strong></p>
+                    <p>Сайт: <a href="https://гувм.мвд.рф" target="_blank">гувм.мвд.рф</a></p>
+                    <p>Горячая линия: <a href="tel:88002227447">8 (800) 222-74-47</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>ФНС России</h4>
+                    <p><strong>Федеральная налоговая служба</strong></p>
+                    <p>Сайт: <a href="https://www.nalog.gov.ru" target="_blank">www.nalog.gov.ru</a></p>
+                    <p>Горячая линия: <a href="tel:88002222222">8 (800) 222-22-22</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>Пенсионный фонд</h4>
+                    <p><strong>ПФР</strong></p>
+                    <p>Сайт: <a href="https://pfr.gov.ru" target="_blank">pfr.gov.ru</a></p>
+                    <p>Горячая линия: <a href="tel:88006000000">8 (800) 600-00-00</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>Роструд</h4>
+                    <p><strong>Федеральная служба по труду и занятости</strong></p>
+                    <p>Сайт: <a href="https://rostrud.gov.ru" target="_blank">rostrud.gov.ru</a></p>
+                    <p>Горячая линия: <a href="tel:88007078841">8 (800) 707-88-41</a></p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Некоммерческие организации</h3>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <h4>Гражданское содействие</h4>
+                    <p>Москва, Олимпийский проспект, д. 22</p>
+                    <p>Телефон: <a href="tel:+74956811823">+7 (495) 681-18-23</a></p>
+                    <p>Сайт: <a href="https://refugee.ru" target="_blank">refugee.ru</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>Центр помощи мигрантам</h4>
+                    <p>Помощь в оформлении документов</p>
+                    <p>Телефон: <a href="tel:+78003330016">+7 (800) 333-00-16</a></p>
+                    <p>Сайт: <a href="https://migranthelp.ru" target="_blank">migranthelp.ru</a></p>
+                </div>
+
+                <div class="contact-card">
+                    <h4>Миграция и закон</h4>
+                    <p>Москва, Чистопрудный бульвар, д. 5</p>
+                    <p>Телефон: <a href="tel:+74999783242">+7 (499) 978-32-42</a></p>
+                    <p>Сайт: <a href="https://migrant-rights.ru" target="_blank">migrant-rights.ru</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>О сайте</h3>
+                <p>Полное руководство по трудоустройству иностранных студентов в России. Актуальная информация о требованиях, документах и процессе оформления.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Быстрые ссылки</h3>
+                <ul>
+                    <li><a href="#requirements">Требования</a></li>
+                    <li><a href="#documents">Документы</a></li>
+                    <li><a href="#process">Процесс трудоустройства</a></li>
+                    <li><a href="#faq">Часто задаваемые вопросы</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Полезные ресурсы</h3>
+                <ul>
+                    <li><a href="https://hh.ru" target="_blank">HeadHunter</a></li>
+                    <li><a href="https://www.superjob.ru" target="_blank">SuperJob</a></li>
+                    <li><a href="https://rabota.ru" target="_blank">Работа.ру</a></li>
+                    <li><a href="https://www.gosuslugi.ru" target="_blank">Госуслуги</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Правовая информация</h3>
+                <p>Информация на сайте носит справочный характер. Для получения актуальной информации обращайтесь в официальные органы.</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Трудоустройство иностранных студентов. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+        }
+
+        // Accordion functionality
+        function toggleAccordion(element) {
+            const accordionItem = element.parentElement;
+            const allItems = document.querySelectorAll('.accordion-item');
+            
+            // Close all other accordions
+            allItems.forEach(item => {
+                if (item !== accordionItem) {
+                    item.classList.remove('active');
+                }
+            });
+            
+            // Toggle current accordion
+            accordionItem.classList.toggle('active');
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'all 0.6s ease-out';
+            observer.observe(section);
+        });
+
+        // Add active class to navigation based on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollY = window.pageYOffset;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                const navLink = document.querySelector(`.nav-links a[href="#${sectionId}"]`);
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLink?.classList.add('active');
+                } else {
+                    navLink?.classList.remove('active');
+                }
+            });
+        });
+
+        // Add loading animation to buttons
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', function(e) {
+                if (this.getAttribute('href').startsWith('#')) {
+                    return; // Skip for anchor links
+                }
+                
+                const originalText = this.innerHTML;
+                this.innerHTML = '<span class="loading"></span> Загрузка...';
+                this.style.pointerEvents = 'none';
+                
+                setTimeout(() => {
+                    this.innerHTML = originalText;
+                    this.style.pointerEvents = 'auto';
+                }, 2000);
+            });
+        });
+
+        // Add copy functionality for contact information
+        document.querySelectorAll('.contact-card a[href^="tel:"]').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const phoneNumber = this.getAttribute('href').replace('tel:', '');
+                
+                navigator.clipboard.writeText(phoneNumber).then(() => {
+                    const originalText = this.textContent;
+                    this.textContent = 'Скопировано!';
+                    this.style.color = 'var(--success-color)';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                        this.style.color = '';
+                    }, 2000);
+                });
+            });
+        });
+
+        // Add search functionality (placeholder)
+        function addSearchFunctionality() {
+            const searchInput = document.createElement('input');
+            searchInput.type = 'text';
+            searchInput.placeholder = 'Поиск по сайту...';
+            searchInput.style.cssText = `
+                position: fixed;
+                top: 80px;
+                right: 20px;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 25px;
+                box-shadow: var(--shadow);
+                width: 250px;
+                display: none;
+                z-index: 999;
+            `;
+            
+            document.body.appendChild(searchInput);
+            
+            // Toggle search on Ctrl+K
+            document.addEventListener('keydown', (e) => {
+                if (e.ctrlKey && e.key === 'k') {
+                    e.preventDefault();
+                    searchInput.style.display = searchInput.style.display === 'none' ? 'block' : 'none';
+                    if (searchInput.style.display === 'block') {
+                        searchInput.focus();
+                    }
+                }
+            });
+            
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const sections = document.querySelectorAll('.section');
+                
+                sections.forEach(section => {
+                    const text = section.textContent.toLowerCase();
+                    section.style.display = text.includes(searchTerm) ? 'block' : 'none';
+                });
+            });
+        }
+
+        // Initialize search
+        addSearchFunctionality();
+
+        // Print functionality
+        function addPrintButton() {
+            const printButton = document.createElement('button');
+            printButton.innerHTML = '🖨️ Печать';
+            printButton.style.cssText = `
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                background: var(--secondary-color);
+                color: white;
+                border: none;
+                border-radius: 25px;
+                cursor: pointer;
+                box-shadow: var(--shadow);
+                z-index: 999;
+                transition: all 0.3s ease;
+            `;
+            
+            printButton.addEventListener('click', () => {
+                window.print();
+            });
+            
+            printButton.addEventListener('mouseenter', () => {
+                printButton.style.transform = 'translateY(-3px)';
+                printButton.style.boxShadow = '0 6px 20px rgba(0,0,0,0.3)';
+            });
+            
+            printButton.addEventListener('mouseleave', () => {
+                printButton.style.transform = 'translateY(0)';
+                printButton.style.boxShadow = 'var(--shadow)';
+            });
+            
+            document.body.appendChild(printButton);
+        }
+
+        // Initialize print button
+        addPrintButton();
+
+        // Progress indicator
+        function addProgressIndicator() {
+            const progressBar = document.createElement('div');
+            progressBar.style.cssText = `
+                position: fixed;
+                top: 60px;
+                left: 0;
+                width: 0%;
+                height: 4px;
+                background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+                z-index: 1001;
+                transition: width 0.3s ease;
+            `;
+            
+            document.body.appendChild(progressBar);
+            
+            window.addEventListener('scroll', () => {
+                const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+                const scrollPosition = window.scrollY;
+                const progress = (scrollPosition / scrollHeight) * 100;
+                progressBar.style.width = `${progress}%`;
+            });
+        }
+
+        // Initialize progress indicator
+        addProgressIndicator();
+    </script>
+</body>
+</html>
